@@ -12,7 +12,7 @@ jobs:
 			# Checkout itself is a standard github action of one or more actions that have been bundled up
 			# Use github.com/actions/checkout to check out this repo
 		  - name: Check out this repo
-		  	uses: actions/checkout@v4
+			uses: actions/checkout@v4
 
 		  - name: Build Docker image
 			run: docker build -t unit-tests-image -f Dockerfile .
