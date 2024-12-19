@@ -23,5 +23,5 @@ TEST_GROUP(TestsAverage)
 TEST(TestsAverage, Test1)
 {
 	float arr[] = {1.0,2.0,3.0};
-	CHECK_EQUAL(2.1, Average(arr, sizeof(arr)/sizeof(arr[0])));
+	CHECK_EQUAL(2.0, Average(arr, sizeof(arr)/sizeof(arr[0])));
 }

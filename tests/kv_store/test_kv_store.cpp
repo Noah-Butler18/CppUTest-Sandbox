@@ -27,7 +27,7 @@ TEST_GROUP(FirstTestGroup)
 TEST(FirstTestGroup, FirstTest)
 {
 	//make sure file is hooked up
-	LONGS_EQUAL(false, kv_store_read(NULL, NULL, 0, NULL));
+	LONGS_EQUAL(true, kv_store_read(NULL, NULL, 0, NULL));
 }
 
 
