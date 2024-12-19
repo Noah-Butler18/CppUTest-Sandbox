@@ -3,7 +3,8 @@ name: Unit Tests
 on: [push]
 
 jobs:
-	docker-unit-tests:
+
+	docker-unit-tests:	
 		runs-on: ubuntu-latest
 		name: Build and test unit tests Docker image
 		steps:
@@ -13,6 +14,9 @@ jobs:
 			# Use github.com/actions/checkout to check out this repo
 		  - name: Check out this repo
 			uses: actions/checkout@v4
+
+			# See where I am in the VM
+		  - run: pwd
 
 		  - name: Build Docker image
 			run: docker build -t unit-tests-image -f Dockerfile .
